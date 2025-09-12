@@ -14,6 +14,16 @@ body {
   background-color:lightblue;
   margin-left: 25px;
 }
+.centered-container {
+  text-align: center; /* Centers inline-block children */
+}
+
+.left-aligned-content {
+  display: inline-block; /* Allows centering within parent */
+  text-align: left;    /* Aligns text within this element to the left */
+  border: 0px solid #ccc; /* For visualization */
+  padding: 10px;
+}
 h1 {text-align: center;}
 p {text-align: center;}
 div {text-align: center;}
@@ -26,17 +36,31 @@ function showAlertOnLoad() {
 </script>
 </head>
 <body onload="showAlertOnLoad()">
-  <centre><h1>Welcome to my page!</h1><centre/>
-  <p>This alert appeared after everything loaded.</p>
+  <centre><h1>Welcome to</h1><centre/>
+  <centre><h1>YoungerLife.Org</h1><centre/>
+  <p>Games are current unfinsihed - but feel free to take a peep</p>
+<div class="centered-container">
+  <div class="left-aligned-content">
 
+    <h2>Primary School Level Games</h2>
+    <ol>
+    <li><a href="treasuretrail.html">Treasure Trail Handwriting Game</a></li>
+    <li><a href="fractionmonster.html">Fraction Monster Maths Game</a></li>
+    <li><a href="">Multiplayer Times Table Olympics (Coming Soon)</a></li>
+    <li><a href="">Spelling bingo (Coming Soon)</a></li>
+    </ol>
+    <h2>Secondary School Level Games</h2>
   <ol>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
+  <li><a href="treasuretrail.html">GCSE Flashcard Games (Coming Soon)</a></li>
+  <li><a href="">Spelling bingo (Coming Soon)</a></li>
+  </ol>
+    <h2>Adult Wellbeing Games</h2>
+     <ol>
+    <li><a href="smashing.html">S.M.A.S.H.I.N.G Game of Life</a></li>
 </ol>
-
-<p><a href="smashing.html">S.M.A.S.H.I.N.G Game of Life</a></p>
   </div>
 </div>
+
+
 </body>
 </html>
